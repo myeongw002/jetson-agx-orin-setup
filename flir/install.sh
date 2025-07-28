@@ -7,7 +7,8 @@ set -euo pipefail
 
 # 1. Run the Spinnaker installation script
 echo "1/6: Installing Spinnaker SDK..."
-bash ~/setup/spinnaker-3.1.0.79-arm64/install_spinnaker_arm.sh
+cd ~/setup/flir/spinnaker-3.1.0.79-arm64
+bash ./install_spinnaker_arm.sh
 
 # 2. Define workspace paths
 WORKSPACE="$HOME/ROS2/ros2_ws"
